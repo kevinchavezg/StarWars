@@ -1,0 +1,17 @@
+:root {
+    --color1: #f2f2f2;
+    --color2: #787676;
+    --color3: #121111;
+    --fontTitle: Orbitron;
+    --fontText: Exo2;
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(../storage/fonts/Orbitron.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Exo2;
+    src: url(../storage/fonts/Exo2.ttf) format("truetype"); 
+}
