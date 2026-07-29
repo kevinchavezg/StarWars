@@ -5,3 +5,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    background: fixed;
+    background-image: image("./storage/img/background.png");
+    
+}
+
+h1 {
+    font-family: var(--fontTitle);
+}
