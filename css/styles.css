@@ -16,11 +16,25 @@ body {
 
 h1 {
     font-family: var(--fontTitle);
-    text-align: center;
+    color: var(--color1);
+}
+
+h2 {
+    font-family: var(--fontTitle);
+    color: var(--color1);
+}
+
+p {
+    font-family: var(--fontText);
     color: var(--color1);
 }
 
 header div {
     text-align: center;
     padding: 5px;
+}
+
+label {
+    font-family: var(--fontText);
+    color: var(--color1);
 }
