@@ -38,10 +38,19 @@ header div {
 
 input {
     font-family: var(--fontText);
+    margin: 20px;
+    width: 200px;
+    height: 30px;
 }
 
-button {
+.botonBuscar {
     font-family: var(--fontText);
+    padding: 5px;
+}
+
+.botonBuscar:hover {
+    background-color: var(--color2) ;
+    color: var(--color1);
 }
 
 .filtros {
@@ -69,13 +78,35 @@ select option {
     border: 1px solid white;
     margin: 20px;
     padding: 20px;
-    width: 300px;
+    width: 1fr;
     border-radius: 15px;
     background-color: var(--color2);
     opacity: 90%;
     border-left: 10px solid;
 }
 
-.card :hover {
+.card:hover {
     cursor: pointer;
+    border-color: yellow;
+    box-shadow: 15px;
+    height: 300px;
+}
+
+footer {
+    padding-top: 100px;
+    margin: 10px;
+}
+
+@media (min-width: 761px) and (max-width: 990px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (max-width: 760px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
