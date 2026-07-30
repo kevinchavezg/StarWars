@@ -6,7 +6,7 @@ async function obtenerDatos() {
         const contenedor = document.getElementById("catalogo");
                 response.forEach(especie =>{
                     contenedor.innerHTML += `
-                        <article>
+                        <article class="card">
                             <h2>${especie.name}</h2>
                             <p>${especie.classification}</p>
                         </article>
@@ -17,5 +17,5 @@ async function obtenerDatos() {
             }
 }
 
-
 especies = obtenerDatos()
+

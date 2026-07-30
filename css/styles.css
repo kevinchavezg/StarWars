@@ -12,6 +12,8 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: white;
+    font-family: var(--fontText);
 }
 
 h1 {
@@ -34,7 +36,46 @@ header div {
     padding: 5px;
 }
 
+input {
+    font-family: var(--fontText);
+}
+
+button {
+    font-family: var(--fontText);
+}
+
+.filtros {
+    display: flex;
+}
+
 label {
     font-family: var(--fontText);
     color: var(--color1);
+}
+
+select option {
+    font-family: var(--fontText);
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: var(--color2);
+    opacity: 90%;
+    border-left: 10px solid;
+}
+
+.card :hover {
+    cursor: pointer;
 }
