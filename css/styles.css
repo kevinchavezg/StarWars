@@ -54,9 +54,7 @@ input {
     color: var(--color1);
 }
 
-.filtros {
-    display: flex;
-}
+
 
 label {
     font-family: var(--fontText);

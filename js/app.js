@@ -11,7 +11,12 @@ async function obtenerDatos() {
                         <article class="card" id="card">
                             <h2>${especie.name}</h2><br>
                             <p>Clasificación: ${especie.classification}</p>
-                            <br><button class="detalle">Detalle</button>
+                            <br><button class="detalle">Detalle</button><br><br>
+                            <p>Estimación de vida: ${especie.average_lifespan}</p>
+                            <p>Color de piel: ${especie.skin_colors}</p>
+                            <p>Color de cabello: ${especie.hair_colors}</p>
+                            <p>Color de ojos: ${especie.eye_colors}</p>
+                            <p>Lenguaje: ${especie.language}</p>
                         </article>
                     `;
                 })
