@@ -49,6 +49,7 @@ input {
 }
 
 .botonBuscar:hover {
+    cursor: pointer;
     background-color: var(--color2) ;
     color: var(--color1);
 }
@@ -64,6 +65,7 @@ label {
 
 select option {
     font-family: var(--fontText);
+    cursor: pointer;
 }
 
 .catalogo {
@@ -78,7 +80,7 @@ select option {
     border: 1px solid white;
     margin: 20px;
     padding: 20px;
-    width: 1fr;
+    width: 90%;
     border-radius: 15px;
     background-color: var(--color2);
     opacity: 90%;
@@ -86,10 +88,19 @@ select option {
 }
 
 .card:hover {
-    cursor: pointer;
     border-color: yellow;
-    box-shadow: 15px;
-    height: 300px;
+    opacity: 100%;
+}
+
+.detalle {
+    font-family: var(--fontText);
+    padding: 5px;
+}
+
+.detalle:hover {
+    cursor: pointer;
+    background-color: var(--color2) ;
+    color: var(--color1);
 }
 
 footer {

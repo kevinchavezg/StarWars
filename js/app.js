@@ -1,19 +1,17 @@
+let datos = [];
+
 async function obtenerDatos() {
     try {
         const datosAPI = await fetch("https://swapi.info/api/species");
-        const response = await datosAPI.json();
-        console.log(response);
+        const datos = await datosAPI.json();
+        console.log(datos);
         const contenedor = document.getElementById("catalogo");
-                response.forEach(especie =>{
+                datos.forEach(especie =>{
                     contenedor.innerHTML += `
                         <article class="card" id="card">
                             <h2>${especie.name}</h2><br>
                             <p>Clasificación: ${especie.classification}</p>
-                            <p>Estimación de vida: ${especie.average_lifespan}</p>
-                            <p>Color de piel: ${especie.skin_colors}</p>
-                            <p>Color de cabello: ${especie.hair_colors}</p>
-                            <p>Color de ojos: ${especie.eye_colors}</p>
-                            <p>Lenguaje: ${especie.language}</p>
+                            <br><button class="detalle">Detalle</button>
                         </article>
                     `;
                 })
