@@ -1,0 +1,121 @@
+@import url(./variables.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../storage/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: var(--fontText);
+}
+
+h1 {
+    font-family: var(--fontTitle);
+    color: var(--color1);
+}
+
+h2 {
+    font-family: var(--fontTitle);
+    color: var(--color1);
+}
+
+p {
+    font-family: var(--fontText);
+    color: var(--color1);
+}
+
+header div {
+    text-align: center;
+    padding: 5px;
+}
+
+input {
+    font-family: var(--fontText);
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.botonBuscar {
+    font-family: var(--fontText);
+    padding: 5px;
+}
+
+.botonBuscar:hover {
+    cursor: pointer;
+    background-color: var(--color2) ;
+    color: var(--color1);
+}
+
+
+
+label {
+    font-family: var(--fontText);
+    color: var(--color1);
+}
+
+select option {
+    font-family: var(--fontText);
+    cursor: pointer;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+    background-color: var(--color2);
+    opacity: 90%;
+    border-left: 10px solid;
+}
+
+.card:hover {
+    border-color: yellow;
+    opacity: 100%;
+}
+
+.detalle {
+    font-family: var(--fontText);
+    padding: 5px;
+}
+
+.detalle:hover {
+    cursor: pointer;
+    background-color: var(--color2) ;
+    color: var(--color1);
+}
+
+footer {
+    padding-top: 100px;
+    margin: 10px;
+}
+
+@media (min-width: 761px) and (max-width: 990px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (max-width: 760px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
